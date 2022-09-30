@@ -1,4 +1,3 @@
-/* eslint-disable no-useless-constructor */
 /* eslint-disable arrow-body-style */
 import { html, LitElement } from 'lit';
 
@@ -46,7 +45,7 @@ export class HfPublishForm extends LitElement {
       <hr>
       <div data-testid="postContainer">
         ${this.posts.map(post => {
-          return html`
+      return html`
             <div>
               <h3>${post.title}</h3>
               <p>${post.description}</p>
@@ -55,7 +54,7 @@ export class HfPublishForm extends LitElement {
               <hr>
             </div>
           `;
-        })}
+    })}
       </div>
     `;
   }
